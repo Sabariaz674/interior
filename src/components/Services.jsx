@@ -1,7 +1,7 @@
 import React from "react";
-import interiorImg from "../assets/interior.jpeg";
-import architectureImg from "../assets/tvunit.jpeg";
-import outdoorImg from "../assets/kitchen.jpeg";
+import interiorImg from "../assets/interior design.jpg";
+import architectureImg from "../assets/Architure.webp";
+import outdoorImg from "../assets/outdoor.webp";
 
 const Services = () => {
   const services = [
@@ -31,7 +31,7 @@ const Services = () => {
   return (
     <section className="bg-white py-12">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+        <h2 className="text-red-700 text-3xl md:text-4xl font-extrabold text-center mb-12 text-gray-800">
           Our Services
         </h2>
 
@@ -42,7 +42,7 @@ const Services = () => {
           >
             {/* Text Section (Always Left) */}
             <div>
-              <h3 className="text-2xl md:text-3xl font-semibold text-yellow-600 mb-4">
+              <h3 className="text-red-700 text-2xl md:text-3xl font-semibold  mb-4">
                 {service.title}
               </h3>
               <p className="text-gray-600 leading-relaxed text-base md:text-lg">

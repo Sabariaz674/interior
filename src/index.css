@@ -8,3 +8,21 @@ html,body{
   overflow-x: hidden;
   font-family: 'Inter', sans-serif;
 }
+@keyframes move {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-8px) translateX(5px);
+  }
+  50% {
+    transform: translateY(0) translateX(10px);
+  }
+  75% {
+    transform: translateY(8px) translateX(5px);
+  }
+}
+
+.animate-move {
+  animation: move 2s infinite ease-in-out;
+}
