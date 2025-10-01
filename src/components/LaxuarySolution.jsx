@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import img1 from "../assets/tvunit.jpeg";
 import img2 from "../assets/interior.jpg";
 import img4 from "../assets/kitchen.jpeg";
-import img6 from "../assets/door.webp";
+import img6 from "../assets/door.jpg";
 import img7 from "../assets/washroom.jpeg";
 import img8 from "../assets/wardrobe.jpeg";
 

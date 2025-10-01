@@ -27,10 +27,10 @@ import kitchen8 from "../assets/kitchen8.jpeg";
 import door1 from "../assets/door1.jpg";
 import door2 from "../assets/door2.jpg";
 import door3 from "../assets/door9.jpg";
-import door4 from "../assets/door4.jfif";
+import door4 from "../assets/door4.jpg";
 import door5 from "../assets/door5.jpg";
 import door6 from "../assets/door6.jpg";
-import door7 from "../assets/door7.jfif";
+import door7 from "../assets/door7.jpg";
 import door8 from "../assets/door8.jpeg";
 
 
@@ -53,18 +53,18 @@ import w4 from "../assets/w4.jpeg";
 import w5 from "../assets/w5.jpeg";
 import w6 from "../assets/w6.jpeg";
 import w7 from "../assets/w7.jpeg";
-import w8 from "../assets/w8.webp";
+import w8 from "../assets/w8.jpg";
 
 
 // ---------------- Washroom Images ----------------
 import washroom1 from "../assets/washroom1.jpg";
-import washroom2 from "../assets/washroom2.webp";
-import washroom3 from "../assets/washroom3.webp";
-import washroom4 from "../assets/washroom4.jfif";
+import washroom2 from "../assets/washroom2.jpg";
+import washroom3 from "../assets/washroom3.jpg";
+import washroom4 from "../assets/washroom4.jpg";
 import washroom5 from "../assets/washroom5.jpg";
-import washroom6 from "../assets/washroom6.webp";
+import washroom6 from "../assets/washroom6.jpg";
 import washroom7 from "../assets/washroom7.jpg";
-import washroom8 from "../assets/washroom8.webp";
+import washroom8 from "../assets/washroom8.jpg";
 
 
 // ---------------- Service Data ----------------

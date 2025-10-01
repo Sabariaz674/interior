@@ -1,7 +1,7 @@
 import React from "react";
 import interiorImg from "../assets/interior design.jpg";
-import architectureImg from "../assets/Architure.webp";
-import outdoorImg from "../assets/outdoor.webp";
+import architectureImg from "../assets/Architure.jpg";
+import outdoorImg from "../assets/outdoor.jpg";
 
 const Services = () => {
   const services = [
