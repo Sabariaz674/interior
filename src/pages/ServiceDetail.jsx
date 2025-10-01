@@ -94,7 +94,7 @@ const ServiceDetail = () => {
 
   return (
     <div className="bg-white min-h-screen py-12 px-6">
-      <h2 className="text-red-700 text-5xl font-bold text-center mb-8 mt-10">{title}</h2>
+      <h2 className="text-red-700 text-5xl font-bold text-center mb-8">{title}</h2>
 
       {/* Grid: 4 columns on medium screens and up (md:grid-cols-4) */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
