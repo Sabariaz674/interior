@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import heroImage1 from "../assets/bg-navbar.jpg"; 
-import heroImage2 from "../assets/heroImage1.jpg"; 
-import heroImage3 from "../assets/heroImage2.jpg"; 
+
+// Images import from assets
+import heroImage1 from "../assets/bg-navbar.jpg";
+import heroImage2 from "../assets/heroImage1.jpg";
+import heroImage3 from "../assets/heroImage2.jpg";
 
 const slides = [
   {
@@ -37,7 +39,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden -mt-10" >
+    <div className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden -mt-10">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -50,6 +52,8 @@ const HeroSection = () => {
           <img
             src={slide.image}
             alt={slide.title}
+            loading="lazy" // ✅ Lazy load added
+            decoding="async" // ✅ Browser ko async decode karne ka hint
             className="w-full h-full object-cover"
           />
 
@@ -72,6 +76,7 @@ const HeroSection = () => {
       <button
         onClick={prevSlide}
         className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-2 rounded-full z-30"
+        aria-label="Previous Slide"
       >
         <ChevronLeft size={28} />
       </button>
@@ -80,6 +85,7 @@ const HeroSection = () => {
       <button
         onClick={nextSlide}
         className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-2 rounded-full z-30"
+        aria-label="Next Slide"
       >
         <ChevronRight size={28} />
       </button>

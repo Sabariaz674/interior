@@ -20,6 +20,7 @@ const AboutUs = () => {
               <img
                 src={luxuryImg}
                 alt="Luxury Interior"
+                loading="lazy"   // ✅ Lazy loading added
                 className="w-full h-[480px] object-cover transform group-hover:scale-105 transition duration-700"
               />
             </div>

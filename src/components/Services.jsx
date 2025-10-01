@@ -55,8 +55,10 @@ const Services = () => {
               <img
                 src={service.image}
                 alt={service.title}
+                loading="lazy"
                 className="rounded-lg shadow-lg w-full md:w-3/5 lg:w-1/1 object-cover"
               />
+
             </div>
           </div>
         ))}

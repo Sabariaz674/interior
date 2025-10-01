@@ -27,7 +27,6 @@ const services = [
 ];
 
 const LuxurySolutions = () => {
-  // Removed 'active' state
   const navigate = useNavigate();
 
   const handleClick = (id) => {
@@ -36,7 +35,7 @@ const LuxurySolutions = () => {
 
   return (
     <section className="bg-white py-12">
-      <h2 className="text-center text-3xl md:text-4xl font-extrabold  mb-8 text-red-700">
+      <h2 className="text-center text-3xl md:text-4xl font-extrabold mb-8 text-red-700">
         LUXURY SOLUTIONS
       </h2>
 
@@ -45,33 +44,29 @@ const LuxurySolutions = () => {
           <div
             key={service.id}
             onClick={() => handleClick(service.id)}
-            // 1. Removed conditional opacity logic.
-            // 2. Used 'group' to enable hover effects on children.
-            className={`relative cursor-pointer group overflow-hidden transition-all duration-500`}
+            className="relative cursor-pointer group overflow-hidden transition-all duration-500"
           >
-            {/* Image */}
+            {/* Image with Lazy Loading */}
             <img
               src={service.image}
               alt={service.title}
-              // The image still scales on hover
+              loading="lazy"   // ✅ Lazy load
               className="w-full h-56 md:h-72 lg:h-80 object-cover transform transition-transform duration-500 group-hover:scale-105"
             />
 
             {/* Dark overlay with Title (Always Visible) */}
-            <div
-              className={`absolute inset-0 flex items-end justify-start p-4 transition-all duration-300 bg-black/40 group-hover:bg-beigh/60`}
-            >
+            <div className="absolute inset-0 flex items-end justify-start p-4 transition-all duration-300 bg-black/40 group-hover:bg-beigh/60">
               <h3 className="text-white text-xl md:text-2xl font-bold text-left">
                 {service.title}
               </h3>
             </div>
 
-            {/* NEW: Detail Overlay (Appears on Hover) */}
+            {/* Detail Overlay (Appears on Hover) */}
             <div
-              className={`absolute inset-0 flex items-center justify-center p-6 text-white text-center 
+              className="absolute inset-0 flex items-center justify-center p-6 text-white text-center 
                           bg-black/80 transition-all duration-500 
                           transform translate-y-full opacity-0 
-                          group-hover:translate-y-0 group-hover:opacity-100`}
+                          group-hover:translate-y-0 group-hover:opacity-100"
             >
               <p className="text-base md:text-lg font-medium">
                 {SERVICE_DETAILS[service.id]}
