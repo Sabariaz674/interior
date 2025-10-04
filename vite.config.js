@@ -10,10 +10,10 @@ export default defineConfig({
     react(),
     ViteImageOptimizer({
       jpg: {
-        quality: 70, // JPEG compression
+        quality: 70, 
       },
       png: {
-        quality: [0.6, 0.8], // PNG compression range
+        quality: [0.6, 0.8], 
       },
     }),
   ],
